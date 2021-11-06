@@ -1,0 +1,54 @@
+{% include "header.html" %}
+
+<body style="background-image: url('{{url_for('static', filename='/img/bg/hex.png') }}');">
+
+{% include "navigationbar.html" %}
+
+
+  <section class="about-section" id="main">
+        <div class="row">
+        <div class='col-lg-2'>
+        </div>
+        <div class='col-lg-8'>
+        <h2>
+            ABOUT ME dolor sit amet, consectetur adipiscing elit,
+            COLLEGE eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            MOTIVATIONS veniam, quis nostrud exercitation ullamco laboris nisi ut
+            WHY PROGRAMMING. Duis aute irure dolor in reprehenderit in voluptate
+        </h2>
+        </div>
+        </div>
+
+
+    </section>
+
+<div class="blink_me">↓ ↓ ↓</div>
+<section class="certificates-section" id="certificates">
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <h3> Python Pro Bootcamp </h3>
+        <img class="cert-image" src="{{ url_for('static', filename='/img/certificates/python-bootcamp.jpg') }}" alt="python bootcamp">
+
+        <h3> MQL4 Algorithmic Trading </h3>
+        <img class="cert-image" src="{{ url_for('static', filename='/img/certificates/algofx.jpg') }}" alt="algo fx">
+      </div>
+      <div class="col-md-4">
+        <h3> FTMO Certificate </h3>
+        <img class="cert-image" src="{{ url_for('static', filename='/img/certificates/ftmo.png') }}" alt="FTMO certificate">
+        <h3> Python Django 2021 </h3>
+        <img class="cert-image" src="{{ url_for('static', filename='/img/certificates/python-bootcamp.jpg') }}" alt="python bootcamp">
+      </div>
+      <div class="col-md-3">
+        <h3> MySQL: Data Analytics & B.I.</h3>
+        <img class="cert-image" src="{{ url_for('static', filename='/img/certificates/algofx.jpg') }}" alt="algo fx">
+        <h3> Crypto Algo Trading Course </h3>
+        <img class="cert-image" src="{{ url_for('static', filename='/img/certificates/python-bootcamp.jpg') }}" alt="python bootcamp">
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+
+</section>
+
+{% include "footer.html" %}

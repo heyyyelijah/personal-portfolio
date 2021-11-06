@@ -1,0 +1,49 @@
+
+  <!-- Footer -->
+  <section class="footer-section" id="footer">
+  <hr style="color:white;" class="footer-hr">
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="container-fluid footer-icons">
+          <a href="https://github.com/heyyyelijah?tab=repositories" target="_blank">
+            <i class="soc-icons fab fa-github-square"></i>
+          </a>
+          <a href="https://www.instagram.com/heyyyelijah/" target="_blank">
+            <i class="soc-icons fab fa-instagram-square"></i>
+          </a>
+          <a href="https://twitter.com/elijahthewoke" target="_blank">
+            <i class="soc-icons fab fa-twitter-square"></i>
+          </a>
+          <a href="{{ url_for('contact') }}">
+            <i class="soc-icons fas fa-envelope"></i>
+          </a>
+          <p class="copyright custom-font">Copyright &copy; Elijah Garay 2021 (BUILT WITH FLASK)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static', filename='js/clean-blog.min.js')}}"></script>
+
+  </div>
+
+  </section>
+
+    <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static', filename='js/clean-blog.min.js')}}"></script>
+
+</body>
+
+</html>

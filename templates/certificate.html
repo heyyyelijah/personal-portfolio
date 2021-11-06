@@ -1,0 +1,9 @@
+{% include "header.html" %}
+
+<body style="background-image: url('{{url_for('static', filename='/img/bg/hex.png') }}');">
+
+<section class="certificate-section">
+    <img class="certificate" src="{{ url_for('static', filename='/img/certificates/{{ C }}') }}" alt="">
+</section>
+
+{% include "footer.html" %}

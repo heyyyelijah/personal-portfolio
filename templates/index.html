@@ -1,0 +1,75 @@
+{% include 'header.html' %}
+
+<body style="background-image: url('{{url_for('static', filename='/img/bg/hex.png') }}');">
+
+{% include "navigationbar.html" %}
+    <section class="main-section container" id="main">
+        <div class="row">
+
+          <!--left grid-->
+          <div class='col-lg-2'>
+          </div>
+
+          <div class='col-lg-8'>
+
+          <div class="opening-lines">
+            <h2>Hello! I'm Elijah, a full stack developer.</h2>
+            <h2>My main language used is Python.</h2>
+            <h2>Main frameworks are Django and Flask.</h2>
+            <h2>A background in HTML, CSS, and JS.</h2>
+            <h2>A background in SQL (MySQL).</h2>
+            <h2>And experience with financial trading.</h2>
+              <br>
+            <a href="{{url_for('about')}}" class="know-more">click to know more</a>
+          </div>
+
+          <div class="blink_me">↓ ↓ ↓</div>
+
+          <div class="main-skills-panel" id="main-skills">
+              <h2 class="skills-title rampart">MAIN SKILLS:</h2>
+              <h3 class="skills">PYTHON</h3>
+              <h3 class="skills">DJANGO</h3>
+              <h3 class="skills">FLASK</h3>
+              <h3 class="skills">SQL</h3>
+              <h3 class="skills">HTML</h3>
+              <h3 class="skills">CSS</h3>
+              <h3 class="skills">ALGORITHMIC TRADING</h3>
+              <hr style="color:;">
+
+          </div>
+
+          <div class="blink_me">↓ ↓ ↓</div>
+
+          <div class="other-skills-panel">
+              <hr style="color:;">
+              <h2 class="skills-title">OTHER SKILLS:</h2>
+              <h3 class="skills">mySQL</h3>
+              <h3 class="skills">postrgreSQL</h3>
+              <h3 class="skills">bootstrap</h3>
+              <h3 class="skills">heroku</h3>
+              <h3 class="skills">github</h3>
+              <h3 class="skills">pandas</h3>
+              <h3 class="skills">numpy</h3>
+              <h3 class="skills">github</h3>
+              <h3 class="skills">javascript</h3>
+              <h3 class="skills">jinja</h3>
+<!--              <h3 class="skills">JS</h3>-->
+              <h3 class="skills">selenium</h3>
+              <h3 class="skills">beautifulSoup</h3>
+              <h3 class="skills">MatplotLib</h3>
+              <h3 class="skills">RESTful API</h3>
+<!--              <h3 class="skills">power BI</h3>-->
+<!--              <h3 class="skills">tableu</h3>-->
+              <hr style="color:;">
+          </div>
+          </div>
+
+        <!--right grid-->
+        <div class='col-lg-2'>
+        </div>
+        </div>
+    </section>
+
+
+
+{% include "footer.html" %}

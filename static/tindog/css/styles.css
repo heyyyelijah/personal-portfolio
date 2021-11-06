@@ -1,0 +1,202 @@
+
+body {
+    font: "Montserrat";
+    text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+#brand-name {
+  font-size: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#navid {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light",sans-serif;
+  font-weight: 100;
+}
+
+#headline {
+  font-family: 'Montserrat-black',sans-serif;
+  line-height: 1;
+  font-weight:900;
+  font-size:4.5rem;
+  margin-bottom: 50px;
+}
+
+.navbar {
+  margin-bottom: 5%;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+#title .container-fluid {
+  padding: 3% 15%;
+  background-color:#ff4c68;
+  text-align: left;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.ms-auto {
+  font-size: 1.7rem;
+}
+
+/* Download Buttons */
+
+.btn {
+  font-size: 1.5rem;
+}
+
+button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+
+.phone_img {
+  width:300px;
+  right: 25%;
+  position: absolute;
+  z-index: 1;
+  transform: rotate(25deg);
+}
+
+/* SECTIONS */
+
+.colored-section {
+  background-color: #FF6B6B;
+  color: white;
+}
+
+.white-section {
+  background-color: white;
+}
+
+/* features section  */
+
+#features {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-title {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #8F8F8F;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.icon {
+  margin-bottom: 1rem;
+  color: #FF6B6B;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* testimonials */
+
+.imgs-testimonials {
+  border-radius: 100%;
+  width: 15%;
+  margin: 20px;
+}
+
+#press {
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 10%;
+  margin: 10px 20px 30px;
+}
+
+/* Pricing */
+
+#pricing {
+  padding: 5%;
+  margin: auto;
+}
+
+.subtn {
+  width: 70%;
+  padding: 15px;
+  margin: auto;
+}
+
+.row {
+  padding-bottom: 7%;
+  padding-top: 4%;
+}
+
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+    font-size: 0.5rem;
+  }
+
+  .phone_img {
+    position: static;
+    transform: rotate(0deg);
+  }
+}
+
+
+.card {
+  padding-bottom: 7%;
+  margin: auto 0px;
+  padding: inherit 0px;
+}
+
+/* call to action */
+
+#cta-text {
+  width: 60%;
+  margin: auto;
+  line-height: 1.5;
+}
+
+.cta-btn {
+  margin: 3% 1% 5%;
+}
+
+.soc-icons {
+  font-size: 1.5rem;
+  margin: 0.7%;
+  margin-bottom: 1%;
+}
+
+#footer .container-fluid {
+  padding-top: 5%;
+  padding-bottom: 30px;
+}
+
+.copyright-text {
+  font-size: 1.2rem
+}
