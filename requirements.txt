@@ -30,7 +30,6 @@ colorama==0.4.4
 decorator==5.1.0
 defusedxml==0.7.1
 distlib==0.3.3
-docutils==0.18
 dominate==2.6.0
 filelock==3.3.2
 gitdb==4.0.9
