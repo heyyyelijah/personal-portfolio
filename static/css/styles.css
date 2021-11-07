@@ -114,7 +114,11 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* PROJECTS SECTION */
 .projects-section {
-    margin: 5% auto 10%;
+    margin: 5% auto 5%;
+}
+
+.proj-section {
+    padding: 3%;
 }
 
 .proj-img-left {
@@ -169,7 +173,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 .about-section {
     text-align: center;
-    margin: 14% auto;
+    margin: 10% 5%;
 }
 
 #certificates {

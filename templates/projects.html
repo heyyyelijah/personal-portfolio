@@ -8,7 +8,8 @@
   <div class="projects-section">
       <h1 class="rampart" style="text-align:center;">MY PROJECTS</h1>
       <br><br>
-      <div>
+
+      <div class="proj-section">
       <div class="right-element">
       <a href="" target="_blank">
         <img style="float:left;" class="proj-img-left"
@@ -18,15 +19,13 @@
       <div class="text-right">
           <a href="" class="proj-link rampart">DEVSEARCH</a>
           <br><br>
-          <p class="inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="inline">Built with Django as a project. Database integreted. Authentication was also
+          integrated. Search and Pagination can be used. Sending emails and password resetting is available.
+          REST API was built during the project.</p>
         </div>
       </div>
 
-      <div>
+      <div class="proj-section">
       <div class="left-element">
         <div class="">
         <a href="https://elijah-blogs.herokuapp.com/" target="_blank">
@@ -40,16 +39,13 @@
           </a>
           <br>
           <br>
-          <p class="inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="inline"> A personal blog website built with Flask and PostgreSQL. Flask Forms
+          and Flask Authentication was also used, together with password hashing.</p>
         </div>
       </div>
       </div>
 
-      <div>
+      <div class="proj-section">
       <div class="right-element">
         <a href="https://todolist-elijah.herokuapp.com/" target="_blank">
         <img style="float:left;" class="proj-img-left"
@@ -61,15 +57,12 @@
               To Do List w/ authentication
           </a>
           <br><br>
-          <p class="inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="inline"> A simple Flask to do list project that takes registration and login requests from
+          multiple users with a PostgreSQL database. Password Hashing was used also. </p>
         </div>
       </div>
 
-      <div>
+      <div class="proj-section">
       <div class="left-element">
         <div class="">
         <a href="{{ url_for('tindog') }}" target="_blank">
@@ -82,11 +75,7 @@
               TINDOG
           </a>
           <br><br>
-          <p class="inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="inline"> A static website that shows CSS and Html5 properties.</p>
         </div>
       </div>
       </div>
@@ -94,5 +83,5 @@
   </div>
 
 </section>
-
+<br>
 {% include "footer.html" %}
