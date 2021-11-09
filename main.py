@@ -6,9 +6,6 @@ import smtplib
 app = Flask(__name__)
 url = config('URL')
 
-MY_EMAIL = config('email')
-PASSWORD = config('password')
-
 
 def sendEmail(data):
     data = data.json()
@@ -28,9 +25,8 @@ def sendEmail(data):
 
 @app.route('/')
 def home():
-    response = requests.request("GET", url)
-
-    sendEmail(response)
+    # response = requests.request("GET", url)
+    # sendEmail(response)
     return render_template("index.html", home_page=True)
 
 @app.route('/projects')
