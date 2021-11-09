@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad39fbc0-72fb-4e02-9cf4-304ffc23bb98" name="Changes" comment="added certificates">
+    <list default="true" id="ad39fbc0-72fb-4e02-9cf4-304ffc23bb98" name="Changes" comment="removed smtp">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -110,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636420064699</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="removed smtp">
+      <created>1636420504356</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1636420504356</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,6 +138,7 @@
     <MESSAGE value="fixed site pictures not showing up png to PNG" />
     <MESSAGE value="added descriptions for projects and added about me info" />
     <MESSAGE value="added certificates" />
-    <option name="LAST_COMMIT_MESSAGE" value="added certificates" />
+    <MESSAGE value="removed smtp" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed smtp" />
   </component>
 </project>
