@@ -6,29 +6,41 @@ import smtplib
 app = Flask(__name__)
 url = config('URL')
 
-# MY_EMAIL = config('email')
-# PASSWORD = config('password')
-#
-# def sendEmail(data):
-#     data = data.json()
-#     ip = data['ip']
-#
-#     if ip == config('my_ip'):
-#         with smtplib.SMTP("smtp.yahoo.com", 587) as connection:
-#             connection.starttls()
-#             connection.login(user=MY_EMAIL, password=PASSWORD)
-#             connection.sendmail(
-#                 from_addr=MY_EMAIL,
-#                 to_addrs="elijahmamuri@gmail.com",
-#                 msg=f"Subject: PORTFOLIO WAS VIEWED \n\n "
-#                     f"ip address: {ip}\n"
-#                     f"country: {data['country_name']}")
+MY_EMAIL = config('email')
+PASSWORD = config('password')
 
+def sendEmail(data):
+    data = data.json()
+    ip = data['ip']
+
+    if ip != config('my_ip'):
+        with smtplib.SMTP("smtp.gmail.com", 587) as connection:
+            connection.starttls()
+            connection.login(user=MY_EMAIL, password=PASSWORD)
+            connection.sendmail(
+                from_addr=MY_EMAIL,
+                to_addrs="elijahmamuri@gmail.com",
+                msg=f"Subject: PORTFOLIO WAS VIEWED \n\n "
+                    f"ip address: {ip}\n"
+                    f"country: {data['country_name']}")
+    else:
+        with smtplib.SMTP("smtp.gmail.com", 587) as connection:
+            connection.starttls()
+            connection.login(user=MY_EMAIL, password=PASSWORD)
+            connection.sendmail(
+                from_addr=MY_EMAIL,
+                to_addrs="elijahmamuri@gmail.com",
+                msg=f"Subject: you viewed your own portfolio \n\n "
+                    f"ip address: {ip}\n"
+                    f"country: {data['country_name']}")
 
 @app.route('/')
 def home():
-    # response = requests.request("GET", url)
-    # sendEmail(response)
+    try:
+        response = requests.request("GET", url)
+        sendEmail(response)
+    except:
+        pass
     return render_template("index.html", home_page=True)
 
 @app.route('/projects')
